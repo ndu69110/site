@@ -420,4 +420,5 @@ nav:
       - "nnn":
         - essai/page1.md
         - essai/page2.md
+        - essai/page3.md
   - Contact: _contact/contact.md
