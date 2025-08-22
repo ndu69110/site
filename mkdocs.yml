@@ -176,6 +176,8 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/nicolas-dupre-94b2a078/
       name: nicolas dupre on Linkedin
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/ndu69110
     #- icon: fontawesome/brands/docker
     #  link: https://hub.docker.com/r/squidfunk/mkdocs-material/
     #- icon: fontawesome/brands/python
@@ -184,8 +186,6 @@ extra:
     #  link: https://bsky.app/profile/squidfunk.bsky.social
     #- icon: fontawesome/brands/mastodon
     #  link: https://fosstodon.org/@squidfunk
-    #- icon: fontawesome/brands/x-twitter
-    #  link: https://x.com/squidfunk
   generator: false # 👈 if true : show auto footer "made with ..."
 
 # --- #
