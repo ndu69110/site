@@ -1,0 +1,424 @@
+# Default http port (by default 8000)
+dev_addr: 0.0.0.0:9000
+
+# Project information
+site_name: GHOST IN THE CLOUD # 👈 Material for MkDocs
+site_url: http://192.168.1.100:8000/ # 👈 https://squidfunk.github.io/mkdocs-material/
+site_author: 'ndu69110'
+site_description: >-
+  Write your documentation in Markdown and create a professional static site in
+  minutes – searchable, customizable, in 60+ languages, for all devices
+copyright: Copyright &copy; 2025 | Built using MkDocs, Material for MkDocs and PyMdown Extensions <br> Hosted with ❤️ in Github Pages # 👈 copyright: Copyright &copy; 2016 - 2025 Martin Donath
+docs_dir: docs/
+
+# --- #
+
+# Repository
+repo_name: github.com/ndu69110 # 👈 squidfunk/mkdocs-material
+repo_url: https://github.com/ndu69110 # 👈 https://github.com/squidfunk/mkdocs-material
+theme:
+  icon:
+    repo: fontawesome/brands/github
+edit_uri: /ubuntu/MKDocs/blob/main/docs # 👈 If you set it to "" (empty string), the edit links are disabled.
+
+# --- #
+
+# Configuration
+theme:
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: logo/logo.webp  
+  favicon: logo/logo.webp # 👈 assets/favicon.png
+  #icon:
+  #  logo: logo
+  name: material
+  language: fr
+  color_mode: dark
+  #custom_dir: docs/custom_theme
+  custom_dir: material/overrides
+  logo: logo/logo.webp
+  palette:
+    - media: "(prefers-color-scheme)"
+      ##toggle:
+        ##icon: material/link
+        ##name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      ##toggle:
+        ##icon: material/toggle-switch
+        ##name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  #!palette: 
+    # Palette toggle for dark mode
+    #!- scheme: slate
+    ##  toggle:
+    ##    icon: material/weather-sunny        # 👈 default: material/brightness-7 
+    ##    name: Switch to light mode
+    # Palette toggle for light mode
+    ##- scheme: default
+    ##  toggle:
+    ##    icon: material/weather-night        # 👈 default: material/brightness-4
+    ##    name: Switch to dark mode  
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select # 👈 default: commented
+    - content.footnote.tooltips # 👈 default: commented
+    - content.tabs.link # 👈 default: commented
+    - content.tooltips
+    - header.autohide # 👈 default: commented
+    - navigation.expand # 👈 default: commented
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant # 👈 default: commented
+    - navigation.instant.prefetch # 👈 default: commented
+    - navigation.instant.progress # 👈 default: commented
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky # 👈 default: commented
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate # 👈 default: commented
+    - header.hide_repo_revision               # 👈 empêche l’affichage du numéro ou texte sous le nom
+    - navigation.instant.preview
+    - navigation.path
+    - toc.sections
+    - search.related
+
+# --- #
+
+# Plugins
+plugins:
+  - open-in-new-tab
+  - blog:
+      archive: true      
+      archive_date_format: MMMM yyyy
+      enabled: true                           # 👈 if false: hide the blog
+      blog_toc: true                          # 👈 if false: hide the blog TOC
+      post_date_format: full
+      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      post_url_format: "{categories}/{slug}"
+      post_url_max_categories: 2
+      post_readtime: true                     # 👈 if false: hide the read time
+      categories: true                        # 👈 if false: hide the categories
+      categories_name: Categories
+      #authors_file: docs/.authors.yml
+      authors: true                           # 👈 if false: hide the authors
+      draft: true
+      draft_if_future_date: true
+      pagination_per_page: 5
+  - search:
+      enabled: true # 👈 Added                # 👈 if false: hide the search bar
+      lang: fr # 👈 Added
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      pipeline: # 👈 Added
+        - stemmer # 👈 Added
+        - stopWordFilter # 👈 Added
+        - trimmer # 👈 Added
+  - minify:
+      minify_html: true
+  - tags: # 👈 added                           # 👈 Material built-in plugin
+      tags_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      tags_slugify_separator: _
+      tags_slugify_format: "tag:{slug}"
+      tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold
+      tags_sort_reverse: true
+      tags_name_property: tags
+      tags_name_variable: tags
+      #listings: false                        # 👈 if false: hide the tags
+      listings_sort_by: !!python/name:material.plugins.tags.item_title
+      listings_sort_reverse: false            # 👈 if false: show the tags in the correct order
+      tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold
+      tags_sort_reverse: true
+      #listings_directive: $tags              # 👈 hide tags if not commmented
+
+# --- #
+
+# Hooks
+hooks:
+  - material/overrides/hooks/shortcodes.py
+  - material/overrides/hooks/translations.py
+
+# --- #
+
+# Additional configuration
+extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: 'simple/github' # 👈 fontawesome/brands/github
+      link: 'https://github.com/ndu69110' # 👈 https://github.com/squidfunk
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/nicolas-dupre-94b2a078/
+      name: nicolas dupre on Linkedin
+    #- icon: fontawesome/brands/docker
+    #  link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    #- icon: fontawesome/brands/python
+    #  link: https://pypi.org/project/mkdocs-material/
+    #- icon: fontawesome/brands/bluesky
+    #  link: https://bsky.app/profile/squidfunk.bsky.social
+    #- icon: fontawesome/brands/mastodon
+    #  link: https://fosstodon.org/@squidfunk
+    #- icon: fontawesome/brands/x-twitter
+    #  link: https://x.com/squidfunk
+  generator: false # 👈 if true : show auto footer "made with ..."
+
+# --- #
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  #- toc:
+  #    permalink: true
+  - toc: # 👈 got it 
+      permalink: "#" # 👈 got it but not same value
+      baselevel: 2
+      separator: "_"
+      title: SOMMAIRE                         # 👈 TOC name
+      permalink_title: Anchor link to this section for reference
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      toc_depth: 3  
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true # 👈 got it 
+      use_pygments: true
+      pygments_lang_class: true # 👈 got it 
+      auto_title: true
+      linenums: true
+      linenums_style: pymdownx-inline
+      line_spans: __span # 👈 got it
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: ndu69110
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.blocks.caption
+  - markdown.extensions.toc:
+      permalink: true
+  - markdown.extensions.md_in_html
+  - markdown.extensions.meta
+  - markdown.extensions.attr_list
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.blocks.details
+  - pymdownx.blocks.tab:
+      alternate_style: true
+  - pymdownx.blocks.admonition:
+      types:
+        - note
+        - abstract
+        - info
+        - tip
+        - success
+        - question
+        - warning
+        - failure
+        - danger
+        - bug
+        - example
+        - quote
+        - download
+
+not_in_nav: |
+  /tutorials/**/*.md
+  /setup/*.md
+
+# --- #
+
+# Extra CSS
+extra_css:
+- overrides/extra.css
+#- material/overrides/assets/css/extra.css
+#- assets/stylesheets/extra.css
+#- stylesheets/extra.css
+
+# --- #
+
+# Page tree
+nav:
+  - Home: index.md
+  - Getting started:
+    - Installation: getting-started.md
+    - Creating your site: creating-your-site.md
+    - Publishing your site: publishing-your-site.md
+    - Customization: customization.md
+    - Conventions: conventions.md
+    - Browser support: browser-support.md
+    - Enterprise feedback: enterprise-support.md
+    - Philosophy: philosophy.md
+    - Alternatives: alternatives.md
+    - License: license.md
+    - Tutorials:
+      - tutorials/index.md
+      - "Blogs":
+        - tutorials/blogs/basic.md
+        - tutorials/blogs/navigation.md
+        - tutorials/blogs/engage.md
+      - "Social cards":
+        - tutorials/social/basic.md
+        - tutorials/social/custom.md
+    - Changelog:
+      - changelog/index.md
+      - How to upgrade: upgrade.md
+  - Setup:
+    - setup/index.md
+    - Changing the colors: setup/changing-the-colors.md
+    - Changing the fonts: setup/changing-the-fonts.md
+    - Changing the language: setup/changing-the-language.md
+    - Changing the logo and icons: setup/changing-the-logo-and-icons.md
+    - Ensuring data privacy: setup/ensuring-data-privacy.md
+    - Setting up navigation: setup/setting-up-navigation.md
+    - Setting up site search: setup/setting-up-site-search.md
+    - Setting up site analytics: setup/setting-up-site-analytics.md
+    - Setting up social cards: setup/setting-up-social-cards.md
+    - Setting up a blog: setup/setting-up-a-blog.md
+    - Setting up tags: setup/setting-up-tags.md
+    - Setting up versioning: setup/setting-up-versioning.md
+    - Setting up the header: setup/setting-up-the-header.md
+    - Setting up the footer: setup/setting-up-the-footer.md
+    - Adding a git repository: setup/adding-a-git-repository.md
+    - Adding a comment system: setup/adding-a-comment-system.md
+    - Building an optimized site: setup/building-an-optimized-site.md
+    - Building for offline usage: setup/building-for-offline-usage.md
+    - Extensions:
+      - setup/extensions/index.md
+      - Python Markdown: setup/extensions/python-markdown.md
+      - Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
+  - Plugins:
+    - plugins/index.md
+    - Blog: plugins/blog.md
+    - Group: plugins/group.md
+    - Info: plugins/info.md
+    - Meta: plugins/meta.md
+    - Offline: plugins/offline.md
+    - Optimize: plugins/optimize.md
+    - Privacy: plugins/privacy.md
+    - Projects: plugins/projects.md
+    - Search: plugins/search.md
+    - Social: plugins/social.md
+    - Tags: plugins/tags.md
+    - Typeset: plugins/typeset.md
+    - Requirements:
+      - Image processing: plugins/requirements/image-processing.md
+      - Caching: plugins/requirements/caching.md
+  - Reference:
+    - reference/index.md
+    - Admonitions: reference/admonitions.md
+    - Annotations: reference/annotations.md
+    - Buttons: reference/buttons.md
+    - Code blocks: reference/code-blocks.md
+    - Content tabs: reference/content-tabs.md
+    - Data tables: reference/data-tables.md
+    - Diagrams: reference/diagrams.md
+    - Footnotes: reference/footnotes.md
+    - Formatting: reference/formatting.md
+    - Grids: reference/grids.md
+    - Icons, Emojis: reference/icons-emojis.md
+    - Images: reference/images.md
+    - Lists: reference/lists.md
+    - Math: reference/math.md
+    - Tooltips: reference/tooltips.md
+  - Insiders:
+    - insiders/index.md
+    - Why sponsor us: insiders/why-sponsor-us.md
+    - What's in it for you: insiders/benefits.md
+    - Who is sponsoring: insiders/our-sponsors.md
+    - Sponsoring tiers: insiders/sponsoring-tiers.md
+    - How to sponsor: insiders/how-to-sponsor.md
+    - Additional information:
+      - Payment and billing: insiders/payment-and-billing.md
+      - Access management: insiders/access-management.md
+      - Runtime and cancellation: insiders/runtime-and-cancellation.md
+      - Privacy: insiders/privacy.md
+      - License: insiders/license.md
+      - Support: support.md
+    - Using Insiders:
+      - Getting started: insiders/getting-started.md
+    - Changelog:
+      - insiders/changelog/index.md
+      - How to upgrade: insiders/upgrade.md
+  - Community:
+    - Contributing:
+      - contributing/index.md
+      - Reporting a bug: contributing/reporting-a-bug.md
+      - Reporting a docs issue: contributing/reporting-a-docs-issue.md
+      - Requesting a change: contributing/requesting-a-change.md
+      - Adding translations: contributing/adding-translations.md
+      - Making a pull request: contributing/making-a-pull-request.md
+      - Asking a question: https://github.com/squidfunk/mkdocs-material/discussions
+    - Guides:
+      - Creating a reproduction: guides/creating-a-reproduction.md
+    - Community experts program:
+      - insiders/community-experts-program/index.md
+  - Blog:
+      - blog/index.md
+      - blog/author/team.md
+  - Tags: tags.md          # this will point to the generated page
+  - "ex menu déroulant":
+    - Tutorials:
+      - tutorials/index.md
+      - "nnn":
+        - essai/page1.md
+        - essai/page2.md
+  - Contact: _contact/contact.md
