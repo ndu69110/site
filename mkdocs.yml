@@ -19,8 +19,7 @@ repo_url: https://github.com/ndu69110 # 👈 https://github.com/squidfunk/mkdocs
 theme:
   icon:
     repo: fontawesome/brands/github
-#edit_uri: /ubuntu/MKDocs/blob/main/docs # 👈 If you set it to "" (empty string), the edit links are disabled.
-edit_uri: /ndu69110/site/blob/main/docs
+edit_uri: /ndu69110/site/blob/main/docs # 👈 If you set it to "" (empty string), the edit links are disabled.
 
 # --- #
 
