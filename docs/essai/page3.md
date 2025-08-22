@@ -5,6 +5,6 @@ tags:
   - résa
 ---
 
-# [title]]
+# [title]
 
 This page is tagged with "aaaa" and "bb".
