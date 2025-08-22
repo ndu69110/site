@@ -282,7 +282,6 @@ markdown_extensions:
 
 not_in_nav: |
   /tutorials/**/*.md
-  /setup/*.md
 
 # --- #
 
