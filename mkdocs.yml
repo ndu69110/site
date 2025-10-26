@@ -157,6 +157,7 @@ plugins:
 
 # Hooks
 hooks:
+  - hooks/socialmedia.py
   - material/overrides/hooks/shortcodes.py
   - material/overrides/hooks/translations.py
 
@@ -164,6 +165,8 @@ hooks:
 
 # Additional configuration
 extra:
+#  custom_icons:
+#    - material/overrides/.icons
   status:
     new: Recently added
     deprecated: Deprecated
@@ -220,6 +223,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
       emoji_index: !!python/name:material.extensions.emoji.twemoji
+      options:
+        custom_icons:
+          - material/overrides/.icons
   - pymdownx.highlight:
       anchor_linenums: true # 👈 got it 
       use_pygments: true
@@ -296,7 +302,7 @@ extra_css:
 
 # Page tree
 nav:
-  - Home: index.md
+  - Accueil: index.md
   - Getting started:
     - Installation: getting-started.md
     - Creating your site: creating-your-site.md
