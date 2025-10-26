@@ -305,6 +305,7 @@ extra_css:
 nav:
   - Accueil: index.md
   - "Qui suis-je ?": whoami.md
+  - "Qui suis-je2 ?": whoami.md  
   - Projets: projets.md
   - Blog:
       - blog/index.md
