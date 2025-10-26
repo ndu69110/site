@@ -3,7 +3,8 @@ dev_addr: 0.0.0.0:9000
 
 # Project information
 site_name: GHOST IN THE CLOUD # 👈 Material for MkDocs
-site_url: http://192.168.1.100:8000/ # 👈 https://squidfunk.github.io/mkdocs-material/
+#site_url: http://192.168.1.100:8000/ # 👈 https://squidfunk.github.io/mkdocs-material/
+site_url: https://ndu69110.github.io/site
 site_author: 'ndu69110'
 site_description: >-
   Write your documentation in Markdown and create a professional static site in
