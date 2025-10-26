@@ -3,8 +3,7 @@ dev_addr: 0.0.0.0:9000
 
 # Project information
 site_name: GHOST IN THE CLOUD # 👈 Material for MkDocs
-#site_url: http://192.168.1.100:8000/ # 👈 https://squidfunk.github.io/mkdocs-material/
-site_url: https://ndu69110.github.io/site
+site_url: https://ndu69110.github.io/site # 👈 https://squidfunk.github.io/mkdocs-material/
 site_author: 'ndu69110'
 site_description: >-
   Write your documentation in Markdown and create a professional static site in
@@ -31,12 +30,9 @@ theme:
     code: Roboto Mono
   logo: logo/logo.webp  
   favicon: logo/logo.webp # 👈 assets/favicon.png
-  #icon:
-  #  logo: logo
   name: material
   language: fr
   color_mode: dark
-  #custom_dir: docs/custom_theme
   custom_dir: material/overrides
   logo: logo/logo.webp
   palette:
@@ -70,7 +66,6 @@ theme:
     ##    icon: material/weather-night        # 👈 default: material/brightness-4
     ##    name: Switch to dark mode  
   features:
-    #- announce.dismiss # 👈 default: not commented
     - content.action.edit
     - content.action.view
     - content.code.annotate
@@ -122,7 +117,6 @@ plugins:
       post_readtime: true                     # 👈 if false: hide the read time
       categories: true                        # 👈 if false: hide the categories
       categories_name: Categories
-      #authors_file: docs/.authors.yml
       authors: true                           # 👈 if false: hide the authors
       draft: true
       draft_if_future_date: true
@@ -147,7 +141,6 @@ plugins:
       tags_sort_reverse: true
       tags_name_property: tags
       tags_name_variable: tags
-      #listings: false                        # 👈 if false: hide the tags
       listings_sort_by: !!python/name:material.plugins.tags.item_title
       listings_sort_reverse: false            # 👈 if false: show the tags in the correct order
       tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold
@@ -166,8 +159,6 @@ hooks:
 
 # Additional configuration
 extra:
-#  custom_icons:
-#    - material/overrides/.icons
   status:
     new: Recently added
     deprecated: Deprecated
@@ -182,14 +173,6 @@ extra:
       name: nicolas dupre on Linkedin
     - icon: fontawesome/brands/x-twitter
       link: https://x.com/ndu69110
-    #- icon: fontawesome/brands/docker
-    #  link: https://hub.docker.com/r/squidfunk/mkdocs-material/
-    #- icon: fontawesome/brands/python
-    #  link: https://pypi.org/project/mkdocs-material/
-    #- icon: fontawesome/brands/bluesky
-    #  link: https://bsky.app/profile/squidfunk.bsky.social
-    #- icon: fontawesome/brands/mastodon
-    #  link: https://fosstodon.org/@squidfunk
   generator: false # 👈 if true : show auto footer "made with ..."
 
 # --- #
@@ -203,8 +186,6 @@ markdown_extensions:
   - footnotes
   - md_in_html
   - tables
-  #- toc:
-  #    permalink: true
   - toc: # 👈 got it 
       permalink: "#" # 👈 got it but not same value
       baselevel: 2
@@ -295,9 +276,6 @@ not_in_nav: |
 # Extra CSS
 extra_css:
 - overrides/extra.css
-#- material/overrides/assets/css/extra.css
-#- assets/stylesheets/extra.css
-#- stylesheets/extra.css
 
 # --- #
 
