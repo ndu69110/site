@@ -283,6 +283,7 @@ extra_css:
 nav:
   - Accueil: index.md
   - "Qui suis-je ?": whoami.md
+  - Gestion du site: gestion-site.md
   - Projets: projets.md
   - Blog:
       - blog/index.md
