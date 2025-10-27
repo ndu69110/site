@@ -28,7 +28,7 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  logo: logo/logo.webp  
+  logo: logo/logo.webp
   favicon: logo/logo.webp # 👈 assets/favicon.png
   name: material
   language: fr
@@ -202,7 +202,7 @@ markdown_extensions:
       slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
-      toc_depth: 3  
+      toc_depth: 3
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
@@ -304,3 +304,4 @@ nav:
         - essai/page2.md
         - essai/page3.md
   - Contact: _contact/contact.md
+  - "Buy me a coffee": buymeacoffee.md
