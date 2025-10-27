@@ -287,9 +287,9 @@ extra_css:
 # --- #
 
 # Page tree
-nav:
+nav: 
   - Accueil: index.md
-  - "Qui suis-je ?": whoami.md
+  - "Qui suis-je ?": _whoami/whoami.md
   - Gestion du site: gestion-site.md
   - Projets: projets.md
   - Blog:
@@ -304,4 +304,4 @@ nav:
         - essai/page2.md
         - essai/page3.md
   - Contact: _contact/contact.md
-  - "Buy me a coffee": buymeacoffee.md
+  - "Buy me a coffee": _buymeacoffee/buymeacoffee.md
