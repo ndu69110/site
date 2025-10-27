@@ -173,6 +173,13 @@ extra:
       name: nicolas dupre on Linkedin
     - icon: fontawesome/brands/x-twitter
       link: https://x.com/ndu69110
+#    - icon: fontawesome/brands/coffee
+#      link: https://buymeacoffee.com/ndu69
+#      name: Buy me a coffee
+  footer:
+    <a href="https://buymeacoffee.com/ndu69" target="_blank">
+      ☕ Buy me a coffee
+    </a>
   generator: false # 👈 if true : show auto footer "made with ..."
 
 # --- #

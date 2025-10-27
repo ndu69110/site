@@ -1,3 +1,17 @@
+---
+title: Gestion du site
+date: 2025-11-27
+authors: [ndu69110]
+slug: site-management
+description: >
+  Outils utilisés pour la création et la gestion du site
+categories:
+  - globule
+tags:
+  - gestion
+  - site
+---
+
 # Outils utilisés pour la création et la gestion du site
 
 
