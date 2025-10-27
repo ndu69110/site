@@ -104,7 +104,7 @@ theme:
 plugins:
   - open-in-new-tab
   - blog:
-      archive: true      
+      archive: true
       archive_date_format: MMMM yyyy
       enabled: true                           # 👈 if false: hide the blog
       blog_toc: true                          # 👈 if false: hide the blog TOC
@@ -176,10 +176,10 @@ extra:
 #    - icon: fontawesome/brands/coffee
 #      link: https://buymeacoffee.com/ndu69
 #      name: Buy me a coffee
-  footer:
-    <a href="https://buymeacoffee.com/ndu69" target="_blank">
-      ☕ Buy me a coffee
-    </a>
+#  footer:
+#    <a href="https://buymeacoffee.com/ndu69" target="_blank">
+#      ☕ Buy me a coffee
+#    </a>
   generator: false # 👈 if true : show auto footer "made with ..."
 
 # --- #
