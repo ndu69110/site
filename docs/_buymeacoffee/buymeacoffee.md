@@ -1,6 +1,6 @@
 
-# Support my work
+# Pour me soutenir dans mon travail 👍👍👍
 
-[Buy me a coffee](https://buymeacoffee.com/ndu69)
+Si vous avez aimé le contenu de ce site, vous pouvez m'offir un café ☕ en suivant ce lien ! 😊
 
-![Alt text](https://www.svgrepo.com/download/530366/coffee.svg "a title")
+[![Buy me a coffee](buymeacoffee.png)](https://buymeacoffee.com/ndu69)

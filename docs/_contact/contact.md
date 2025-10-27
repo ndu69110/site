@@ -1,4 +1,4 @@
-# Formulaire de contact
+# Formulaire de contact ✉️
 
 <p style="text-align:left;">Merci de bien saisir vos coordonnées pour que je puisse vous lire et vous répondre en retour.</p>
 

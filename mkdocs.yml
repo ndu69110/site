@@ -290,7 +290,7 @@ extra_css:
 nav:
   - Accueil: index.md
   - "Qui suis-je ?": _whoami/whoami.md
-  - Gestion du site: gestion-site.md
+  - Gestion du site: _gestionsite/gestionsite.md
   - Projets: projets.md
   - Blog:
       - blog/index.md
