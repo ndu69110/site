@@ -3,21 +3,13 @@
 
 Si vous avez aimé le contenu de ce site, vous pouvez m'offir un café ☕ en suivant ce lien ! 😊
 
-<pre>
-
-</pre>
-
 [![Buy me a coffee](buymeacoffee.png)](https://ko-fi.com/ndu69)
-
-<pre>
-
-</pre>
 
 ## Pourquoi me soutenir ? 🤔
 
 Vous l’avez peut-être remarqué, ce site ne diffuse aucune publicité 🚫 et accueille très peu de contenu sponsorisé. Pour le financer, je compte essentiellement sur le soutien de mes lecteurs. ❤️
 
-### Pour quels Objectifs ? 🎯
+### Pour quels objectifs ? 🎯
 
 Mon **principal objectif** est de **fournir un contenu accessible et utile** à tous.
 
@@ -29,6 +21,6 @@ Mon **principal objectif** est de **fournir un contenu accessible et utile** à 
     
 ## Pourquoi ?
 
-**Vous allez me dire, mais pourquoi te soutenir ? Quelles sont tes dépenses ?** 🤷‍♂️ Vos dons permettent de couvrir **Les dépenses liées à l’hébergement du blog** ainsi qu'au **maintien de mon homelab** 💼 (Tout cela pour un montant mensuel de 100€ environ pour les dépenses fixes).
+**Vous allez me dire, mais pourquoi te soutenir ? Quelles sont tes dépenses ?** 🤷‍♂️ Vos dons permettent de couvrir **les dépenses liées à l’hébergement du blog** ainsi qu'au **maintien de mon homelab** 💼 (tout cela pour un montant mensuel de 100€ environ pour les dépenses fixes).
 
 **Merci à tous ceux qui m’ont soutenu et à ceux qui vont le faire.** 👏
