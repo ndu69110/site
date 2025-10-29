@@ -284,6 +284,7 @@ not_in_nav: |
 extra_css:
 - overrides/extra.css
 
+
 # --- #
 
 # Page tree
@@ -291,12 +292,11 @@ nav:
   - Accueil: index.md
   - "Qui suis-je ?": _whoami/whoami.md
   - Gestion du site: _gestionsite/gestionsite.md
-  - Projets: projets.md
   - Blog:
       - blog/index.md
       - blog/author/team.md
   - Tags: tags.md          # this will point to the generated page
-  - "Projets":
+  - Projets:
     - Tutorials:
       - _Projects/index.md
       - "nnn":
@@ -304,4 +304,4 @@ nav:
         - _Projects/Folder/page2.md
         - _Projects/Folder/page3.md
   - Contact: _contact/contact.md
-  - "Soutenir le blog": _buymeacoffee/buymeacoffee.md
+  - "Buy me a coffee": _buymeacoffee/buymeacoffee.md
