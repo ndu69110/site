@@ -46,7 +46,7 @@
 
 /* Set category text color to blue */
 .md-tabs__link {
-    color: #0074D9 !important;    /* Blue shade, you can use any color code */
+    color: #5d8adc !important;    /* Blue shade, you can use any color code */
     font-size: 2em !important;  /* Keep your increased size */
     font-weight: bold;
     transition: color 0.2s;       /* Smooth color transition */
