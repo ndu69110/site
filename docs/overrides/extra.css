@@ -36,9 +36,3 @@
 .md-header__source .md-source__facts {
     display: none;
 }
-
-/* Increase font size of top navigation categories in Material for MkDocs */
-.md-tabs__link {
-    font-size: 1.8em !important;  /* Adjust as needed */
-    font-weight: bold;            /* Optional: make it bold */
-}
