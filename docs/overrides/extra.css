@@ -36,3 +36,7 @@
 .md-header__source .md-source__facts {
     display: none;
 }
+
+.md-header-nav__title, .md-tabs__link, .md-nav__link {
+    font-size: 1.2em !important;
+}
