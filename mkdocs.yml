@@ -294,11 +294,11 @@ nav:
   - Gestion du site: _gestionsite/gestionsite.md
   - Projets:
     - Tutorials:
-      - _Projects/index.md
+      - _projects/index.md
       - "nnn":
-        - _Projects/Folder/page1.md
-        - _Projects/Folder/page2.md
-        - _Projects/Folder/page3.md
+        - _projects/Folder/page1.md
+        - _projects/Folder/page2.md
+        - _projects/Folder/page3.md
   - Blog:
       - blog/index.md
       - blog/author/team.md
