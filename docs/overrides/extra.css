@@ -37,6 +37,7 @@
     display: none;
 }
 
+/* Change the size of the text of each category */
 .md-header-nav__title, .md-tabs__link, .md-nav__link {
-    font-size: 1.2em !important;
+    font-size: 20px !important; font-weight: bold;
 }
