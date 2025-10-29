@@ -292,10 +292,6 @@ nav:
   - Accueil: index.md
   - "Qui suis-je ?": _whoami/whoami.md
   - Gestion du site: _gestionsite/gestionsite.md
-  - Blog:
-      - blog/index.md
-      - blog/author/team.md
-  - Tags: tags.md          # this will point to the generated page
   - Projets:
     - Tutorials:
       - _Projects/index.md
@@ -303,5 +299,9 @@ nav:
         - _Projects/Folder/page1.md
         - _Projects/Folder/page2.md
         - _Projects/Folder/page3.md
+  - Blog:
+      - blog/index.md
+      - blog/author/team.md
+  - Tags: tags.md          # this will point to the generated page
   - Contact: _contact/contact.md
   - "Buy me a coffee": _buymeacoffee/buymeacoffee.md
