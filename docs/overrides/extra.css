@@ -39,5 +39,5 @@
 
 /* Change the size of the text of each category */
 .md-header-nav__title, .md-tabs__link, .md-nav__link {
-    font-size: 30px !important;
+    font-size: 1.2em !important;
 }
