@@ -283,6 +283,7 @@ not_in_nav: |
 # Extra CSS
 extra_css:
 - overrides/extra.css
+- stylesheets/extra.css
 
 # --- #
 
