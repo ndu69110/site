@@ -9,8 +9,3 @@ Si vous avez aimé le contenu de ce site, vous pouvez m'offir un café ☕ en su
 </pre>
 
 [![Buy me a coffee](kofi6.png)](https://ko-fi.com/ndu69)
-
-<pre>
-
-
-</pre>
