@@ -289,19 +289,19 @@ extra_css:
 
 # Page tree
 nav:
-  - Accueil: index.md
-  - "Qui suis-je ?": _whoami/whoami.md
-  - Gestion du site: _gestionsite/gestionsite.md
-  - Projets:
-    - Tutorials:
+  - Accueil 🏠 : index.md
+  - "Qui suis-je ? 👋" : _whoami/whoami.md
+  - Gestion du site ⚙️ : _gestionsite/gestionsite.md
+  - Projets 🛠️ :
+    - Tutorials :
       - _projects/index.md
       - "nnn":
         - _projects/Folder/page1.md
         - _projects/Folder/page2.md
         - _projects/Folder/page3.md
-  - Blog:
+  - Blog 📑 :
       - blog/index.md
       - blog/author/team.md
-  - Tags: tags.md          # this will point to the generated page
-  - Contact: _contact/contact.md
-  - "Buy me a coffee": _buymeacoffee/buymeacoffee.md
+  - Tags 🔗 : tags.md          # this will point to the generated page
+  - Contact ✉️ : _contact/contact.md
+  - "Soutenez mon projet 🚀": _buymeacoffee/buymeacoffee.md

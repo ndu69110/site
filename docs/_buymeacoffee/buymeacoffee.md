@@ -1,6 +1,6 @@
 # Pour me soutenir dans mon travail 👍👍👍
 
-**Si vous avez aimé le contenu de ce site, vous pouvez m'offir un café ☕ en suivant ce lien ⬇️** 😊
+**Si vous avez aimé le contenu de ce site, vous pouvez m'offir un café ☕ en suivant le lien ci-dessous :** ⤵️
 
 [![Buy me a coffee](buymeacoffee.png)](https://ko-fi.com/ndu69)
 
