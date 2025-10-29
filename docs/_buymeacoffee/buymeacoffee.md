@@ -1,13 +1,13 @@
 
 # Pour me soutenir dans mon travail 👍👍👍
 
-Si vous avez aimé le contenu de ce site, vous pouvez m'offir un café ☕ en suivant ce lien ! 😊
+**Si vous avez aimé le contenu de ce site, vous pouvez m'offir un café ☕ en suivant ce lien ⬇️** 😊
 
 [![Buy me a coffee](buymeacoffee.png)](https://ko-fi.com/ndu69)
 
 ## Pourquoi me soutenir ? 🤔
 
-Vous l’avez peut-être remarqué, ce site ne diffuse aucune publicité 🚫 et accueille très peu de contenu sponsorisé. Pour le financer, je compte essentiellement sur le soutien de mes lecteurs. ❤️
+Vous l’avez peut-être remarqué, ce site ne diffuse aucune publicité 🚫. Pour le financer, je compte essentiellement sur le soutien de mes lecteurs. ❤️
 
 ### Pour quels objectifs ? 🎯
 
@@ -17,7 +17,7 @@ Mon **principal objectif** est de **fournir un contenu accessible et utile** à 
 
 **Chaque don compte, les petits comme les gros**. Vous pouvez effectuer un don :
 
--   **Ponctuel** ou **mensuel** sur mon compte [ko-fi ↗](https://ko-fi.com/ndu69).
+-   **Ponctuel** ou **mensuel** sur mon compte [**ko-fi** ↗](https://ko-fi.com/ndu69).
     
 ## Pourquoi ?
 
