@@ -296,12 +296,12 @@ nav:
       - blog/index.md
       - blog/author/team.md
   - Tags: tags.md          # this will point to the generated page
-  - "ex menu déroulant":
+  - "Projets":
     - Tutorials:
-      - tutorials/index.md
+      - _Projects/index.md
       - "nnn":
-        - essai/page1.md
-        - essai/page2.md
-        - essai/page3.md
+        - _Projects/Folder/page1.md
+        - _Projects/Folder/page2.md
+        - _Projects/Folder/page3.md
   - Contact: _contact/contact.md
   - "Soutenir le blog": _buymeacoffee/buymeacoffee.md
