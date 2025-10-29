@@ -1,4 +1,4 @@
-.md-header-nav__topic {
-  font-size: 1.2rem;
-  font-weight: bold;
+/* Increase font size of navigation menu */
+.md-header__nav .md-nav__link, .md-header__nav .md-nav__item {
+    font-size: 1.2em; /* Change to your preferred size */
 }
