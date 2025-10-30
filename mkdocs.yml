@@ -285,6 +285,12 @@ extra_css:
 - overrides/extra.css
 
 
+
+extra_javascript:
+  - javascripts/rename-code-title.js
+
+
+
 # --- #
 
 # Page tree

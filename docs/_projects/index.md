@@ -1,5 +1,23 @@
 # Tutorials
 
+
+```
+ls -la
+```
+
+```yaml
+console.log('Hello world');
+console.log('Hello world');
+```
+
+```zetasql
+console.log('Hello world');
+```
+
+```Powershell
+console.log('Hello world');
+```
+
 In addition to the basic getting started guides, we offer tutorials that aim to
 show how you can use Material for MkDocs in different use cases. In contrast to
 the getting started guides or the reference documentation, the tutorials show
